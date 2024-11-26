@@ -1,24 +1,18 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import ListarTarefas from "./Listar";
+import ListarTarefasConcluidas from "./listarConcluidas";
+import ListarTarefasNaoConcluidas from "./listarNaoConcluidas";
+import AlterarTarefa from './alterar';
+import CadastrarTarefa from './cadastrar';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="app">
+      <ListarTarefas />
+      <ListarTarefasConcluidas />
+      <ListarTarefasNaoConcluidas />
+
     </div>
   );
 }
